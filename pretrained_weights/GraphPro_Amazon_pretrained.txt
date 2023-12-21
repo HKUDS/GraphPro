@@ -1,0 +1,217 @@
+2023-09-11 18:35:50,353 - DESC: 
+2023-09-11 18:35:50,353 - PID: 709170
+2023-09-11 18:35:50,353 - python main.py --data_path dataset/amazon_w --exp_name pretrain --phase pretrain --edge_dropout 0.2 --model ET_alibi --device cuda:0 --log 1 --hour_interval_pre 24 
+2023-09-11 18:35:50,353 - Namespace(ab='full', batch_size=2048, data_path='dataset/amazon_w', desc='', device='cuda:0', early_stop_patience=10, edge_dropout=0.2, emb_dropout=0, emb_size=64, eval_batch_size=512, exp_name='pretrain', exp_time='Sep-11-2023_18-35-50', f_model='GF_1', gen_mode=0, hour_interval_f=1, hour_interval_pre=24.0, log=1, lr=0.001, metrics='recall;ndcg', metrics_k='20', model='ET_alibi', neg_num=1, neighbor_sample_num=5, num_epochs=300, num_layers=3, phase='pretrain', plugin=False, pre_model='LightGCN_edge', pre_model_path='saved/lightgcn_edge/saved_model.pt', save_dir='saved/amazon_w/pretrain', save_path='saved', seed=2023, weight_decay=0.0001)
+2023-09-11 18:35:50,353 - Loading dataset for pretrain...
+2023-09-11 18:35:51,772 - Number of test users: 121343
+2023-09-11 18:35:52,702 - Number of users: 131707
+2023-09-11 18:35:52,702 - Number of items: 107028
+2023-09-11 18:35:52,702 - Number of edges: 563999
+2023-09-11 18:35:54,286 - Number of users from all users with no history: 0
+2023-09-11 18:36:01,974 - Max Time Step: 31
+2023-09-11 18:36:25,145 - [Epoch   0 / 300 Training Time: 23.13s ] rec_loss: 0.5154 reg_loss: 0.0000 
+2023-09-11 18:37:08,748 - Eval Time: 43.59s [recall@20: 0.0348 ] [ndcg@20: 0.0209 ] 
+2023-09-11 18:37:08,749 - Find better model at epoch: 0: recall=0.0348
+2023-09-11 18:37:08,812 - Model saved!
+2023-09-11 18:37:33,870 - [Epoch   1 / 300 Training Time: 25.03s ] rec_loss: 0.2431 reg_loss: 0.0000 
+2023-09-11 18:38:17,494 - Eval Time: 43.61s [recall@20: 0.0445 ] [ndcg@20: 0.0265 ] 
+2023-09-11 18:38:17,495 - Find better model at epoch: 1: recall=0.0445
+2023-09-11 18:38:17,543 - Model saved!
+2023-09-11 18:38:41,901 - [Epoch   2 / 300 Training Time: 24.33s ] rec_loss: 0.1287 reg_loss: 0.0001 
+2023-09-11 18:39:25,530 - Eval Time: 43.61s [recall@20: 0.0517 ] [ndcg@20: 0.0313 ] 
+2023-09-11 18:39:25,530 - Find better model at epoch: 2: recall=0.0517
+2023-09-11 18:39:25,595 - Model saved!
+2023-09-11 18:39:48,871 - [Epoch   3 / 300 Training Time: 23.25s ] rec_loss: 0.0763 reg_loss: 0.0001 
+2023-09-11 18:40:32,556 - Eval Time: 43.67s [recall@20: 0.0570 ] [ndcg@20: 0.0351 ] 
+2023-09-11 18:40:32,556 - Find better model at epoch: 3: recall=0.057
+2023-09-11 18:40:32,600 - Model saved!
+2023-09-11 18:40:55,813 - [Epoch   4 / 300 Training Time: 23.19s ] rec_loss: 0.0507 reg_loss: 0.0001 
+2023-09-11 18:41:45,871 - Eval Time: 50.04s [recall@20: 0.0603 ] [ndcg@20: 0.0377 ] 
+2023-09-11 18:41:45,871 - Find better model at epoch: 4: recall=0.0603
+2023-09-11 18:41:45,921 - Model saved!
+2023-09-11 18:42:14,589 - [Epoch   5 / 300 Training Time: 28.62s ] rec_loss: 0.0369 reg_loss: 0.0001 
+2023-09-11 18:43:09,655 - Eval Time: 55.04s [recall@20: 0.0632 ] [ndcg@20: 0.0395 ] 
+2023-09-11 18:43:09,655 - Find better model at epoch: 5: recall=0.0632
+2023-09-11 18:43:09,742 - Model saved!
+2023-09-11 18:43:41,793 - [Epoch   6 / 300 Training Time: 32.01s ] rec_loss: 0.0284 reg_loss: 0.0001 
+2023-09-11 18:44:40,041 - Eval Time: 58.22s [recall@20: 0.0650 ] [ndcg@20: 0.0410 ] 
+2023-09-11 18:44:40,042 - Find better model at epoch: 6: recall=0.065
+2023-09-11 18:44:40,115 - Model saved!
+2023-09-11 18:45:13,122 - [Epoch   7 / 300 Training Time: 32.96s ] rec_loss: 0.0226 reg_loss: 0.0002 
+2023-09-11 18:46:12,946 - Eval Time: 59.80s [recall@20: 0.0664 ] [ndcg@20: 0.0421 ] 
+2023-09-11 18:46:12,946 - Find better model at epoch: 7: recall=0.0664
+2023-09-11 18:46:13,037 - Model saved!
+2023-09-11 18:46:40,853 - [Epoch   8 / 300 Training Time: 27.77s ] rec_loss: 0.0190 reg_loss: 0.0002 
+2023-09-11 18:47:31,997 - Eval Time: 51.13s [recall@20: 0.0679 ] [ndcg@20: 0.0433 ] 
+2023-09-11 18:47:31,998 - Find better model at epoch: 8: recall=0.0679
+2023-09-11 18:47:32,052 - Model saved!
+2023-09-11 18:48:01,049 - [Epoch   9 / 300 Training Time: 28.96s ] rec_loss: 0.0158 reg_loss: 0.0002 
+2023-09-11 18:48:51,838 - Eval Time: 50.77s [recall@20: 0.0692 ] [ndcg@20: 0.0441 ] 
+2023-09-11 18:48:51,838 - Find better model at epoch: 9: recall=0.0692
+2023-09-11 18:48:51,894 - Model saved!
+2023-09-11 18:49:21,436 - [Epoch  10 / 300 Training Time: 29.51s ] rec_loss: 0.0137 reg_loss: 0.0002 
+2023-09-11 18:50:14,113 - Eval Time: 52.67s [recall@20: 0.0705 ] [ndcg@20: 0.0451 ] 
+2023-09-11 18:50:14,113 - Find better model at epoch: 10: recall=0.0705
+2023-09-11 18:50:14,186 - Model saved!
+2023-09-11 18:50:48,546 - [Epoch  11 / 300 Training Time: 34.33s ] rec_loss: 0.0119 reg_loss: 0.0002 
+2023-09-11 18:51:43,188 - Eval Time: 54.61s [recall@20: 0.0718 ] [ndcg@20: 0.0461 ] 
+2023-09-11 18:51:43,188 - Find better model at epoch: 11: recall=0.0718
+2023-09-11 18:51:43,269 - Model saved!
+2023-09-11 18:52:13,357 - [Epoch  12 / 300 Training Time: 30.05s ] rec_loss: 0.0103 reg_loss: 0.0002 
+2023-09-11 18:53:01,016 - Eval Time: 47.64s [recall@20: 0.0723 ] [ndcg@20: 0.0465 ] 
+2023-09-11 18:53:01,017 - Find better model at epoch: 12: recall=0.0723
+2023-09-11 18:53:01,062 - Model saved!
+2023-09-11 18:53:24,457 - [Epoch  13 / 300 Training Time: 23.37s ] rec_loss: 0.0094 reg_loss: 0.0002 
+2023-09-11 18:54:10,645 - Eval Time: 46.17s [recall@20: 0.0734 ] [ndcg@20: 0.0471 ] 
+2023-09-11 18:54:10,645 - Find better model at epoch: 13: recall=0.0734
+2023-09-11 18:54:10,709 - Model saved!
+2023-09-11 18:54:34,113 - [Epoch  14 / 300 Training Time: 23.38s ] rec_loss: 0.0086 reg_loss: 0.0002 
+2023-09-11 18:55:20,542 - Eval Time: 46.41s [recall@20: 0.0745 ] [ndcg@20: 0.0480 ] 
+2023-09-11 18:55:20,542 - Find better model at epoch: 14: recall=0.0745
+2023-09-11 18:55:20,605 - Model saved!
+2023-09-11 18:55:44,239 - [Epoch  15 / 300 Training Time: 23.61s ] rec_loss: 0.0078 reg_loss: 0.0002 
+2023-09-11 18:56:30,551 - Eval Time: 46.30s [recall@20: 0.0753 ] [ndcg@20: 0.0486 ] 
+2023-09-11 18:56:30,552 - Find better model at epoch: 15: recall=0.0753
+2023-09-11 18:56:30,597 - Model saved!
+2023-09-11 18:56:53,282 - [Epoch  16 / 300 Training Time: 22.66s ] rec_loss: 0.0069 reg_loss: 0.0002 
+2023-09-11 18:57:39,448 - Eval Time: 46.15s [recall@20: 0.0759 ] [ndcg@20: 0.0491 ] 
+2023-09-11 18:57:39,448 - Find better model at epoch: 16: recall=0.0759
+2023-09-11 18:57:39,492 - Model saved!
+2023-09-11 18:58:02,301 - [Epoch  17 / 300 Training Time: 22.78s ] rec_loss: 0.0065 reg_loss: 0.0002 
+2023-09-11 18:58:47,229 - Eval Time: 44.91s [recall@20: 0.0764 ] [ndcg@20: 0.0494 ] 
+2023-09-11 18:58:47,229 - Find better model at epoch: 17: recall=0.0764
+2023-09-11 18:58:47,274 - Model saved!
+2023-09-11 18:59:09,535 - [Epoch  18 / 300 Training Time: 22.24s ] rec_loss: 0.0059 reg_loss: 0.0003 
+2023-09-11 18:59:55,836 - Eval Time: 46.29s [recall@20: 0.0767 ] [ndcg@20: 0.0499 ] 
+2023-09-11 18:59:55,836 - Find better model at epoch: 18: recall=0.0767
+2023-09-11 18:59:55,895 - Model saved!
+2023-09-11 19:00:18,380 - [Epoch  19 / 300 Training Time: 22.46s ] rec_loss: 0.0055 reg_loss: 0.0003 
+2023-09-11 19:01:05,156 - Eval Time: 46.76s [recall@20: 0.0770 ] [ndcg@20: 0.0501 ] 
+2023-09-11 19:01:05,156 - Find better model at epoch: 19: recall=0.077
+2023-09-11 19:01:05,204 - Model saved!
+2023-09-11 19:01:28,230 - [Epoch  20 / 300 Training Time: 23.00s ] rec_loss: 0.0051 reg_loss: 0.0003 
+2023-09-11 19:02:13,826 - Eval Time: 45.58s [recall@20: 0.0776 ] [ndcg@20: 0.0505 ] 
+2023-09-11 19:02:13,827 - Find better model at epoch: 20: recall=0.0776
+2023-09-11 19:02:13,870 - Model saved!
+2023-09-11 19:02:37,506 - [Epoch  21 / 300 Training Time: 23.61s ] rec_loss: 0.0048 reg_loss: 0.0003 
+2023-09-11 19:03:24,193 - Eval Time: 46.67s [recall@20: 0.0777 ] [ndcg@20: 0.0507 ] 
+2023-09-11 19:03:24,193 - Find better model at epoch: 21: recall=0.0777
+2023-09-11 19:03:24,257 - Model saved!
+2023-09-11 19:03:48,363 - [Epoch  22 / 300 Training Time: 24.08s ] rec_loss: 0.0045 reg_loss: 0.0003 
+2023-09-11 19:04:34,157 - Eval Time: 45.78s [recall@20: 0.0782 ] [ndcg@20: 0.0511 ] 
+2023-09-11 19:04:34,157 - Find better model at epoch: 22: recall=0.0782
+2023-09-11 19:04:34,218 - Model saved!
+2023-09-11 19:04:55,090 - [Epoch  23 / 300 Training Time: 20.85s ] rec_loss: 0.0041 reg_loss: 0.0003 
+2023-09-11 19:05:41,316 - Eval Time: 46.21s [recall@20: 0.0784 ] [ndcg@20: 0.0515 ] 
+2023-09-11 19:05:41,316 - Find better model at epoch: 23: recall=0.0784
+2023-09-11 19:05:41,364 - Model saved!
+2023-09-11 19:06:07,193 - [Epoch  24 / 300 Training Time: 25.80s ] rec_loss: 0.0040 reg_loss: 0.0003 
+2023-09-11 19:06:54,301 - Eval Time: 47.09s [recall@20: 0.0791 ] [ndcg@20: 0.0515 ] 
+2023-09-11 19:06:54,301 - Find better model at epoch: 24: recall=0.0791
+2023-09-11 19:06:54,346 - Model saved!
+2023-09-11 19:07:17,460 - [Epoch  25 / 300 Training Time: 23.09s ] rec_loss: 0.0036 reg_loss: 0.0003 
+2023-09-11 19:08:04,099 - Eval Time: 46.62s [recall@20: 0.0794 ] [ndcg@20: 0.0518 ] 
+2023-09-11 19:08:04,099 - Find better model at epoch: 25: recall=0.0794
+2023-09-11 19:08:04,157 - Model saved!
+2023-09-11 19:08:28,019 - [Epoch  26 / 300 Training Time: 23.83s ] rec_loss: 0.0034 reg_loss: 0.0003 
+2023-09-11 19:09:13,934 - Eval Time: 45.90s [recall@20: 0.0798 ] [ndcg@20: 0.0520 ] 
+2023-09-11 19:09:13,935 - Find better model at epoch: 26: recall=0.0798
+2023-09-11 19:09:13,980 - Model saved!
+2023-09-11 19:09:32,980 - [Epoch  27 / 300 Training Time: 18.98s ] rec_loss: 0.0033 reg_loss: 0.0003 
+2023-09-11 19:10:19,151 - Eval Time: 46.15s [recall@20: 0.0801 ] [ndcg@20: 0.0523 ] 
+2023-09-11 19:10:19,151 - Find better model at epoch: 27: recall=0.0801
+2023-09-11 19:10:19,197 - Model saved!
+2023-09-11 19:10:37,256 - [Epoch  28 / 300 Training Time: 18.04s ] rec_loss: 0.0031 reg_loss: 0.0003 
+2023-09-11 19:11:21,939 - Eval Time: 44.67s [recall@20: 0.0804 ] [ndcg@20: 0.0525 ] 
+2023-09-11 19:11:21,940 - Find better model at epoch: 28: recall=0.0804
+2023-09-11 19:11:21,986 - Model saved!
+2023-09-11 19:11:39,422 - [Epoch  29 / 300 Training Time: 17.41s ] rec_loss: 0.0029 reg_loss: 0.0003 
+2023-09-11 19:12:24,926 - Eval Time: 45.49s [recall@20: 0.0807 ] [ndcg@20: 0.0526 ] 
+2023-09-11 19:12:24,927 - Find better model at epoch: 29: recall=0.0807
+2023-09-11 19:12:24,990 - Model saved!
+2023-09-11 19:12:43,358 - [Epoch  30 / 300 Training Time: 18.34s ] rec_loss: 0.0029 reg_loss: 0.0003 
+2023-09-11 19:13:29,884 - Eval Time: 46.51s [recall@20: 0.0810 ] [ndcg@20: 0.0529 ] 
+2023-09-11 19:13:29,884 - Find better model at epoch: 30: recall=0.081
+2023-09-11 19:13:29,931 - Model saved!
+2023-09-11 19:13:47,393 - [Epoch  31 / 300 Training Time: 17.44s ] rec_loss: 0.0026 reg_loss: 0.0003 
+2023-09-11 19:14:33,700 - Eval Time: 46.29s [recall@20: 0.0813 ] [ndcg@20: 0.0530 ] 
+2023-09-11 19:14:33,701 - Find better model at epoch: 31: recall=0.0813
+2023-09-11 19:14:33,760 - Model saved!
+2023-09-11 19:14:52,738 - [Epoch  32 / 300 Training Time: 18.95s ] rec_loss: 0.0025 reg_loss: 0.0003 
+2023-09-11 19:15:38,620 - Eval Time: 45.87s [recall@20: 0.0814 ] [ndcg@20: 0.0531 ] 
+2023-09-11 19:15:38,620 - Find better model at epoch: 32: recall=0.0814
+2023-09-11 19:15:38,692 - Model saved!
+2023-09-11 19:15:58,820 - [Epoch  33 / 300 Training Time: 20.10s ] rec_loss: 0.0026 reg_loss: 0.0003 
+2023-09-11 19:16:43,530 - Eval Time: 44.69s [recall@20: 0.0813 ] [ndcg@20: 0.0532 ] 
+2023-09-11 19:17:00,483 - [Epoch  34 / 300 Training Time: 16.93s ] rec_loss: 0.0023 reg_loss: 0.0003 
+2023-09-11 19:17:45,468 - Eval Time: 44.97s [recall@20: 0.0813 ] [ndcg@20: 0.0535 ] 
+2023-09-11 19:18:01,673 - [Epoch  35 / 300 Training Time: 16.18s ] rec_loss: 0.0023 reg_loss: 0.0004 
+2023-09-11 19:18:45,511 - Eval Time: 43.82s [recall@20: 0.0813 ] [ndcg@20: 0.0536 ] 
+2023-09-11 19:19:02,600 - [Epoch  36 / 300 Training Time: 17.06s ] rec_loss: 0.0022 reg_loss: 0.0004 
+2023-09-11 19:19:46,474 - Eval Time: 43.86s [recall@20: 0.0817 ] [ndcg@20: 0.0538 ] 
+2023-09-11 19:19:46,474 - Find better model at epoch: 36: recall=0.0817
+2023-09-11 19:19:46,533 - Model saved!
+2023-09-11 19:20:04,116 - [Epoch  37 / 300 Training Time: 17.56s ] rec_loss: 0.0021 reg_loss: 0.0004 
+2023-09-11 19:20:49,067 - Eval Time: 44.94s [recall@20: 0.0820 ] [ndcg@20: 0.0539 ] 
+2023-09-11 19:20:49,068 - Find better model at epoch: 37: recall=0.082
+2023-09-11 19:20:49,128 - Model saved!
+2023-09-11 19:21:05,233 - [Epoch  38 / 300 Training Time: 16.08s ] rec_loss: 0.0020 reg_loss: 0.0004 
+2023-09-11 19:21:50,672 - Eval Time: 45.42s [recall@20: 0.0824 ] [ndcg@20: 0.0543 ] 
+2023-09-11 19:21:50,672 - Find better model at epoch: 38: recall=0.0824
+2023-09-11 19:21:50,736 - Model saved!
+2023-09-11 19:22:07,007 - [Epoch  39 / 300 Training Time: 16.24s ] rec_loss: 0.0020 reg_loss: 0.0004 
+2023-09-11 19:22:51,969 - Eval Time: 44.95s [recall@20: 0.0824 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:23:08,044 - [Epoch  40 / 300 Training Time: 16.05s ] rec_loss: 0.0019 reg_loss: 0.0004 
+2023-09-11 19:23:53,986 - Eval Time: 45.93s [recall@20: 0.0826 ] [ndcg@20: 0.0541 ] 
+2023-09-11 19:23:53,986 - Find better model at epoch: 40: recall=0.0826
+2023-09-11 19:23:54,030 - Model saved!
+2023-09-11 19:24:11,394 - [Epoch  41 / 300 Training Time: 17.34s ] rec_loss: 0.0018 reg_loss: 0.0004 
+2023-09-11 19:24:56,257 - Eval Time: 44.85s [recall@20: 0.0827 ] [ndcg@20: 0.0543 ] 
+2023-09-11 19:24:56,258 - Find better model at epoch: 41: recall=0.0827
+2023-09-11 19:24:56,306 - Model saved!
+2023-09-11 19:25:14,904 - [Epoch  42 / 300 Training Time: 18.57s ] rec_loss: 0.0018 reg_loss: 0.0004 
+2023-09-11 19:25:59,699 - Eval Time: 44.78s [recall@20: 0.0831 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:25:59,699 - Find better model at epoch: 42: recall=0.0831
+2023-09-11 19:25:59,756 - Model saved!
+2023-09-11 19:26:16,316 - [Epoch  43 / 300 Training Time: 16.54s ] rec_loss: 0.0016 reg_loss: 0.0004 
+2023-09-11 19:27:00,518 - Eval Time: 44.19s [recall@20: 0.0828 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:27:16,666 - [Epoch  44 / 300 Training Time: 16.12s ] rec_loss: 0.0015 reg_loss: 0.0004 
+2023-09-11 19:28:01,042 - Eval Time: 44.36s [recall@20: 0.0829 ] [ndcg@20: 0.0542 ] 
+2023-09-11 19:28:17,194 - [Epoch  45 / 300 Training Time: 16.13s ] rec_loss: 0.0016 reg_loss: 0.0004 
+2023-09-11 19:29:02,148 - Eval Time: 44.94s [recall@20: 0.0835 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:29:02,148 - Find better model at epoch: 45: recall=0.0835
+2023-09-11 19:29:02,214 - Model saved!
+2023-09-11 19:29:18,250 - [Epoch  46 / 300 Training Time: 16.01s ] rec_loss: 0.0014 reg_loss: 0.0004 
+2023-09-11 19:30:02,238 - Eval Time: 43.97s [recall@20: 0.0836 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:30:02,238 - Find better model at epoch: 46: recall=0.0836
+2023-09-11 19:30:02,283 - Model saved!
+2023-09-11 19:30:18,323 - [Epoch  47 / 300 Training Time: 16.02s ] rec_loss: 0.0014 reg_loss: 0.0004 
+2023-09-11 19:31:02,268 - Eval Time: 43.93s [recall@20: 0.0836 ] [ndcg@20: 0.0543 ] 
+2023-09-11 19:31:18,374 - [Epoch  48 / 300 Training Time: 16.08s ] rec_loss: 0.0014 reg_loss: 0.0004 
+2023-09-11 19:32:02,206 - Eval Time: 43.82s [recall@20: 0.0836 ] [ndcg@20: 0.0543 ] 
+2023-09-11 19:32:18,311 - [Epoch  49 / 300 Training Time: 16.08s ] rec_loss: 0.0015 reg_loss: 0.0004 
+2023-09-11 19:33:02,156 - Eval Time: 43.83s [recall@20: 0.0837 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:33:02,157 - Find better model at epoch: 49: recall=0.0837
+2023-09-11 19:33:02,200 - Model saved!
+2023-09-11 19:33:18,276 - [Epoch  50 / 300 Training Time: 16.05s ] rec_loss: 0.0014 reg_loss: 0.0004 
+2023-09-11 19:34:02,100 - Eval Time: 43.81s [recall@20: 0.0834 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:34:19,115 - [Epoch  51 / 300 Training Time: 16.99s ] rec_loss: 0.0013 reg_loss: 0.0004 
+2023-09-11 19:35:04,669 - Eval Time: 45.54s [recall@20: 0.0833 ] [ndcg@20: 0.0543 ] 
+2023-09-11 19:35:21,139 - [Epoch  52 / 300 Training Time: 16.45s ] rec_loss: 0.0014 reg_loss: 0.0004 
+2023-09-11 19:36:05,898 - Eval Time: 44.74s [recall@20: 0.0834 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:36:23,293 - [Epoch  53 / 300 Training Time: 17.37s ] rec_loss: 0.0013 reg_loss: 0.0004 
+2023-09-11 19:37:08,636 - Eval Time: 45.33s [recall@20: 0.0836 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:37:25,584 - [Epoch  54 / 300 Training Time: 16.92s ] rec_loss: 0.0012 reg_loss: 0.0004 
+2023-09-11 19:38:11,418 - Eval Time: 45.82s [recall@20: 0.0835 ] [ndcg@20: 0.0544 ] 
+2023-09-11 19:38:28,312 - [Epoch  55 / 300 Training Time: 16.87s ] rec_loss: 0.0012 reg_loss: 0.0004 
+2023-09-11 19:39:14,741 - Eval Time: 46.41s [recall@20: 0.0836 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:39:31,080 - [Epoch  56 / 300 Training Time: 16.31s ] rec_loss: 0.0013 reg_loss: 0.0004 
+2023-09-11 19:40:15,536 - Eval Time: 44.44s [recall@20: 0.0834 ] [ndcg@20: 0.0547 ] 
+2023-09-11 19:40:31,555 - [Epoch  57 / 300 Training Time: 15.99s ] rec_loss: 0.0012 reg_loss: 0.0004 
+2023-09-11 19:41:16,000 - Eval Time: 44.43s [recall@20: 0.0833 ] [ndcg@20: 0.0545 ] 
+2023-09-11 19:41:31,857 - [Epoch  58 / 300 Training Time: 15.83s ] rec_loss: 0.0010 reg_loss: 0.0004 
+2023-09-11 19:42:16,255 - Eval Time: 44.38s [recall@20: 0.0835 ] [ndcg@20: 0.0547 ] 
+2023-09-11 19:42:32,050 - [Epoch  59 / 300 Training Time: 15.77s ] rec_loss: 0.0010 reg_loss: 0.0004 
+2023-09-11 19:43:16,616 - Eval Time: 44.55s [recall@20: 0.0835 ] [ndcg@20: 0.0547 ] 
+2023-09-11 19:43:16,617 - Early stop!
+2023-09-11 19:43:16,617 - Best performance: recall=0.0837, ndcg=0.0545

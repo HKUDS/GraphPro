@@ -1,0 +1,9 @@
+networkx==3.2
+numpy==1.23.4
+pandas==2.1.4
+scipy==1.9.3
+setproctitle==1.2.2
+torch==1.13.1+cu117
+torch_scatter==2.1.2
+tqdm==4.66.1
+~orch==1.13.0
