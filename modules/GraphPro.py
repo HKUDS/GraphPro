@@ -29,6 +29,8 @@ class GraphPro(BaseModel):
 
             if self.phase == 'for_tune':
                 self.emb_gate = self.random_gate
+            elif self.phase == 'pretrain':
+                self.emb_gate = lambda x: x # no gating
 
         # load gating weights from pretrained model
         elif self.phase == 'finetune':
