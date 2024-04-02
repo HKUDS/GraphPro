@@ -1,4 +1,4 @@
-# GraphPro
+# GraphPro, WWW'2024
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
