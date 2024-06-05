@@ -1,5 +1,7 @@
 # GraphPro, WWW'2024
 
+<img src='GraphPro_cover.png' />
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Introduction
